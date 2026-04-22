@@ -177,3 +177,16 @@ body[dir="rtl"] .contact-links a i {
   height: 45px;
   object-fit: contain;
 }
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.contact-icon {
+  font-size: 40px;
+  color: #ff9800;
+}
