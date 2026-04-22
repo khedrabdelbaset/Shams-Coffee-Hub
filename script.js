@@ -267,11 +267,11 @@ function openContact() {
 
       <div class="contact-links">
 
-        <a href="tel:+201234567890">
+        <a href="tel:+201122203111" target="_blank">
           <i class="fa-solid fa-phone"></i> Call
         </a>
 
-        <a href="https://wa.me/201234567890" target="_blank">
+        <a href="https://wa.me/201122203111" target="_blank">
           <i class="fa-brands fa-whatsapp"></i> WhatsApp
         </a>
 
@@ -283,7 +283,7 @@ function openContact() {
           <i class="fa-brands fa-telegram"></i> Telegram
         </a>
 
-        <a href="https://facebook.com/yourpage" target="_blank">
+        <a href="https://www.facebook.com/profile.php?id=61569006413184" target="_blank">
           <i class="fa-brands fa-facebook"></i> Facebook
         </a>
 
