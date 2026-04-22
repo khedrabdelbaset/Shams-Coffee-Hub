@@ -208,9 +208,10 @@ function renderHome() {
         </div>
       `).join('')}
 
-      <div class="card" onclick="openContact()">
-        <h3>${getContactText()}</h3>
-      </div>
+<div class="card contact-card" onclick="openContact()">
+  <i class="fa-solid fa-headset contact-icon"></i>
+  <h3>${getContactText()}</h3>
+</div>
     </div>
   `;
 
