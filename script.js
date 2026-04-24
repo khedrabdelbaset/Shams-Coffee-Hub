@@ -1,6 +1,3 @@
-
-/* script.js */
-
 const data = {
   categories: [
     {
@@ -16,7 +13,7 @@ const data = {
         { name: { en: "Latte", ar: "لاتيه", ru: "Латте" }, desc: { en: "Smooth coffee with steamed milk", ar: "قهوة ناعمة مع حليب مبخر", ru: "Нежный кофе с вспененным молоком" }, price: 35, image: "images/products/latte.webp" },
         { name: { en: "Flavored Latte", ar: "لاتيه بنكهة", ru: "Латте с ароматизатором" }, desc: { en: "Latte with syrup", ar: "لاتيه مع شراب", ru: "Латте с сиропом" }, price: 40, image: "images/products/flavored-latte.webp" },
         { name: { en: "Cappuccino", ar: "كابتشينو", ru: "Капучино" }, desc: { en: "Coffee with thick foam", ar: "قهوة برغوة كثيفة", ru: "Кофе с густой пеной" }, price: 35, image: "images/products/cappuccino.webp" },
-        { name: { en: "Flat White", ar: "فلات وايت", ru: "Флэт уайт" }, desc: { en: "Smooth espresso with microfoam", ar: "اسبريسو ناعم مع مايكروفوم", ru: "Нежный эспрессо с микропеной" }, price: 38, image: "images/products/flat-white.webp" },
+        { name: { en: "Flat White", ar: "فلات وايت", ru: "Флэт уайт" }, desc: { en: "Smooth espresso with microfoam", ar: "اسبريسو ناعم مع مايكروفوم", ru: "Нежный эспрессо с микропеной" }, price: 38, image: "images/products/flat-white.jpg" },
         { name: { en: "Cortado", ar: "كورتادو", ru: "Кортадо" }, desc: { en: "Espresso cut with warm milk", ar: "اسبريسو ممزوج بحليب دافئ", ru: "Эспрессо с теплым молоком" }, price: 32, image: "images/products/cortado.webp" },
         { name: { en: "Single Turkish Coffee", ar: "قهوة تركية فردي", ru: "Турецкий кофе (один)" }, desc: { en: "Traditional Turkish coffee", ar: "قهوة تركية تقليدية", ru: "Традиционный турецкий кофе" }, price: 25, image: "images/products/turkish-coffee.webp" },
         { name: { en: "Double Turkish Coffee", ar: "قهوة تركية مزدوج", ru: "Турецкий кофе (двойной)" }, desc: { en: "Strong Turkish coffee", ar: "قهوة تركية قوية", ru: "Крепкий турецкий кофе" }, price: 30, image: "images/products/double-turkish.webp" },
@@ -283,11 +280,11 @@ function openContact() {
           <i class="fa-brands fa-telegram"></i> Telegram
         </a>
 
-        <a href="https://www.facebook.com/profile.php?id=61569006413184" target="_blank">
+        <a href="https://www.facebook.com/Shams.coffee.hub" target="_blank">
           <i class="fa-brands fa-facebook"></i> Facebook
         </a>
 
-        <a href="mailto:info@shamscoffee.com">
+        <a href="mailto:khedrabdelbasetkhedr@gmail.com">
           <i class="fa-solid fa-envelope"></i> Email
         </a>
 
@@ -324,14 +321,7 @@ window.addEventListener("popstate", (event) => {
     renderHome();
   }
 });
-/* function updateFooter() {
-  const text = {
-    en: "All prices include VAT",
-    ar: "جميع الأسعار شاملة الضريبة",
-    ru: "Все цены включают НДС"
-  };
-  footer.innerText = text[currentLang];
-} */
+
 const siteTitle = document.getElementById("siteTitle");
 
 function updateHeader() {
@@ -356,7 +346,7 @@ document.getElementById("languageSwitcher").addEventListener("change", (e) => {
   currentLang = e.target.value;
   document.body.dir = currentLang === "ar" ? "rtl" : "ltr";
 
-  updateHeader();   // 👈 ضيف دي
+  updateHeader();
   updateFooter();
 
   if (currentCategory) openCategory(currentCategory.id);

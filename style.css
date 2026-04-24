@@ -1,4 +1,3 @@
-/* style.css */
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
@@ -13,39 +12,28 @@ body {
   padding: 15px 20px;
   background: #4b2e2b;
   color: white;
-    border-radius: 12px;   /* يخلي الحواف مدورة */
-  margin: 15px;          /* عشان يبان التدوير */
+  border-radius: 12px;
+  margin: 15px;
 }
 
-/* .header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
-  background: #4b2e2b;
-  color: white;
 
-  border-radius: 20px;
-  margin: 15px;
-} */
 
-/* نشيل التنسيق الافتراضي للرابط */
 .header h1 {
-  margin: 0; /* عشان نشيل المسافة الافتراضية */
+  margin: 0;
+
 }
 
 .header h1 a {
-  text-decoration: none;   /* نشيل الخط تحت */
-  color: white;            /* نخليه نفس لون الهيدر */
+  text-decoration: none;
+ 
+  color: white;
+  
   font-size: 18px;
   font-weight: bold;
 }
 
-/* تأثير بسيط عند المرور */
+
 .header h1 a:hover {
   color: #f5c16c;
   transition: 0.3s;
@@ -70,7 +58,7 @@ select {
   border-radius: 16px;
   padding: 15px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -80,12 +68,20 @@ select {
 }
 
 .card img {
+  width: 100px;
+  height: 90px;
+  border-radius: 20%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* .card img {
   width: 90px;
   height: 90px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 10px;
-}
+} */
 
 .back-btn {
   margin: 15px 20px;
@@ -101,8 +97,15 @@ footer {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 
@@ -139,14 +142,31 @@ footer {
   font-weight: 600;
 }
 
-/* ألوان المنصات الرسمية */
+/* ألوان المنصات */
 
-.contact-links a:nth-child(1) { color: #333; }              /* Call */
-.contact-links a:nth-child(2) { color: #25D366; }           /* WhatsApp */
-.contact-links a:nth-child(3) { color: #E4405F; }           /* Instagram */
-.contact-links a:nth-child(4) { color: #0088cc; }           /* Telegram */
-.contact-links a:nth-child(5) { color: #1877F2; }           /* Facebook */
-.contact-links a:nth-child(6) { color: #D44638; }           /* Email */
+.contact-links a:nth-child(1) {
+  color: #333;
+}
+
+.contact-links a:nth-child(2) {
+  color: #12d75a;
+}
+
+.contact-links a:nth-child(3) {
+  color: #E4405F;
+}
+
+.contact-links a:nth-child(4) {
+  color: #0088cc;
+}
+
+.contact-links a:nth-child(5) {
+  color: #1877F2;
+}
+
+.contact-links a:nth-child(6) {
+  color: #D44638;
+}
 
 .contact-links a:hover {
   transform: scale(1.05);
@@ -205,6 +225,6 @@ body[dir="rtl"] .contact-links a i {
   justify-content: center;
   cursor: pointer;
   font-size: 22px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   z-index: 999;
 }
