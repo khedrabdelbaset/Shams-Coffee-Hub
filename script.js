@@ -111,7 +111,7 @@ const data = {
     {
       id: "soft-drinks",
       name: { en: "Soft Drinks", ar: "مشروبات غازية", ru: "Безалкогольные напитки" },
-      image: "images/categories/soft-drinks.webp",
+      image: "images/categories/soft-drinks.png",
       products: [
         { name: { en: "Sprite", ar: "سبرايت", ru: "Спрайт" }, desc: { en: "Lemon-lime soda", ar: "صودا ليمون-لايم", ru: "Газировка с лимоном и лаймом" }, price: 15, image: "images/products/sprite.webp" },
         { name: { en: "Seven Up", ar: "سيفن أب", ru: "Севен Ап" }, desc: { en: "Lemon-lime soda", ar: "صودا ليمون-لايم", ru: "Газировка с лимоном и лаймом" }, price: 15, image: "images/products/sevenup.webp" },
